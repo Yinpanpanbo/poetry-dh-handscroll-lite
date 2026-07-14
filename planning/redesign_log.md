@@ -2,6 +2,27 @@
 
 > Living record for the group project. Update this file whenever a design or implementation decision changes.
 
+## 2026-07-14 — Presentation-focused simplification
+
+### Reason
+
+Group review found the complete exhibition too long to explain in a course presentation. The full version was first preserved as both the annotated tag and archive branch `full-exhibition-v1`; simplification then began on the separate branch `simplified-presentation`.
+
+### New scope
+
+- Keep one opening question, one six-stop bilingual handscroll, three interpretive views, four front-end technique cards, and compact credits.
+- Remove the grammar map, reception-history gallery, material workshop, audio and other long-form chapters from the presentation path.
+- Share `style.css` and `app.js` between English and Chinese pages; select language data from the document `lang` value.
+- Reduce the Pages artifact to two HTML files, one stylesheet, one script and one original SVG.
+- Do not push or replace the current public full-version deployment before group review.
+
+### Verification
+
+- `node --check app.js`: passed.
+- Local Chrome desktop 1440×1000 and mobile 390×844 captures: passed visual inspection.
+- Chrome DevTools Protocol simulation: six scenes and six buttons; hero state opens; stop 06 selects “Remain” and reports `06 / 06`; Boundary updates the note; range input moves the handscroll; English and Chinese load one shared script; document overflow is 0.
+- Updated screenshot-led product and presentation documents now follow the shorter page architecture.
+
 ## 2026-07-13 — Project reset and design decision
 
 ### Objective

@@ -40,3 +40,7 @@ Use `index.html` as the GitHub Pages and classroom entry. It provides an English
 ## v4 presentation and interaction guardrails — 2026-07-14
 
 Preserve the six viewport-width poem stops and the direct stop picker; each button must continue to place the complete bilingual verse and its corresponding scene in one painting viewport. Keep the light-silk grammar map and the audited body/label weights. Do not restore browser speech. For the course presentation, explain only four representative techniques: semantic HTML, CSS layout/visual system, CSS state animation, and vanilla JavaScript state/navigation. Additional modules should be described as reuse of these fundamentals rather than as new technology.
+
+## Simplified presentation branch — 2026-07-14
+
+The complete exhibition is preserved by the annotated tag and archive branch `full-exhibition-v1`. Current work continues on `simplified-presentation` and is intentionally not pushed until group review. The simplified page has only four visible chapters: hero, six-stop handscroll, four implementation cards, and compact credits. Do not restore the grammar map, textual evidence gallery, mineral workshop, speech playback, or other long-form modules on this branch. Preserve implementation depth through the shared bilingual state model, continuous SVG handscroll, accessible controls, responsive layout, and one purposeful CSS state animation.

@@ -1,173 +1,184 @@
-const STOPS = [
+const EN_STOPS = [
   {
-    tag: '首联 · 01 · 新雨入山',
-    poem: ['“空”不是无人', '雨后空气与暮秋同时进入。全诗随后有人与舟，空山更接近幽静疏朗。', 'B 通行解释'],
-    painting: ['雨后从疏朗开始', '原创画面让雨脚由左向右逐渐消失，湿石、水面与山坳共同建立澄明的感知条件。', 'D 图像转译'],
-    research: ['当代的观看转译', '本页手卷为项目原创；它依据诗句顺序组织阅读，不构成历史图像证据。', 'D 研究边界']
+    tag: '01 · AFTER RAIN',
+    reading: ['The “empty” mountains', '“Empty” describes a clear, quiet field of perception—not a place without people.', 'B · RECEIVED READING'],
+    design: ['Rain clears from left to right', 'Wet stone, low hills and a brightening field translate the opening change in weather.', 'D · VISUAL TRANSLATION'],
+    boundary: ['An interface, not a reconstruction', 'The landscape was drawn for this project and does not identify a historical location.', 'D · RESEARCH BOUNDARY']
   },
   {
-    tag: '颔联 · 02 · 月照松间',
-    poem: ['光有了方向', '“间照”让月光经过枝叶遮挡，而不是均匀铺满山林。', 'B 文本细读'],
-    painting: ['光被松枝切分', '月不作为独立图标悬空；枝叶切分的斜光把视线从高处带向湿石。', 'D 图像转译'],
-    research: ['象征不是唯一答案', '松的品格象征属于常见阅读传统；页面优先呈现光线和空间关系。', 'B 通行解释']
+    tag: '02 · MOON / PINES',
+    reading: ['Light acquires direction', 'The moon is perceived between branches rather than as an isolated symbol.', 'B · CLOSE READING'],
+    design: ['Branches cut the light', 'A descending beam moves the eye from the moon towards the lower spring scene.', 'D · VISUAL TRANSLATION'],
+    boundary: ['The pine does not prove character', 'Moral symbolism is possible, but the page first follows the spatial language of the line.', 'B · INTERPRETIVE BOUNDARY']
   },
   {
-    tag: '颔联 · 03 · 清泉过石',
-    poem: ['图像开始有声', '月色与泉声、高处与低处、静观与流动在相邻两句中回应。', 'B 文本细读'],
-    painting: ['水脉把视线带向低处', '泉线绕过三组石块形成节拍；它回应月光方向，但并不是从月亮流出的水。', 'D 图像转译'],
-    research: ['不复原真实山泉', '画面只呈现诗句内部的高低、静动关系，不指认王维见过的具体地点。', 'D 研究边界']
+    tag: '03 · SPRING / STONE',
+    reading: ['The image begins to sound', 'Still moonlight and flowing water form a balanced visual and auditory pair.', 'B · CLOSE READING'],
+    design: ['Water carries the eye', 'A curved spring meets irregular stones and draws attention down through the scene.', 'D · VISUAL TRANSLATION'],
+    boundary: ['No real stream is claimed', 'The drawing visualises a relation inside the couplet, not a place seen by Wang Wei.', 'D · RESEARCH BOUNDARY']
   },
   {
-    tag: '颈联 · 04 · 竹喧人归',
-    poem: ['先闻其声，后见其人', '语序先写竹林声响，再揭示浣洗归来的女子。', 'B 文本细读'],
-    painting: ['竹叶扰动先出现', '密竹与向右的叶势先制造声音线索，两名小比例归人随后才从竹隙中被发现。', 'D 图像转译'],
-    research: ['劳动者不是装饰仕女', '诗中浣女首先是归返中的劳动者；不增绘原文没有说明的服饰等级、表情与工具。', 'B 文本分析']
+    tag: '04 · BAMBOO / RETURN',
+    reading: ['Sound arrives before its source', 'The bamboo is heard first; returning washerwomen are recognised afterwards.', 'B · CLOSE READING'],
+    design: ['Leaves move before figures appear', 'The left-to-right rhythm preserves the sentence order and keeps the workers secondary.', 'D · VISUAL TRANSLATION'],
+    boundary: ['Workers, not decorative court ladies', 'The poem does not supply costume, emotion or biographical detail.', 'B · EVIDENCE BOUNDARY']
   },
   {
-    tag: '颈联 · 05 · 莲动舟下',
-    poem: ['由迹象发现行动', '莲叶先动，舟影随后出现；环境变化先于行动主体。', 'B 文本细读'],
-    painting: ['先见水纹与莲叶分开', '水纹和倾斜的莲叶先建立方向，低矮渔舟随后从叶后露出，并保持次级。', 'D 图像转译'],
-    research: ['“下”保留方向空间', '通行解释可指舟行经过或顺流而下；页面不绘制确定航线。', 'B 通行解释']
+    tag: '05 · LOTUS / BOAT',
+    reading: ['Movement reveals the boat', 'Lotus leaves stir before the fishing boat becomes visible.', 'B · CLOSE READING'],
+    design: ['Ripple, leaf, then hull', 'The composition lets an environmental trace reveal its human cause.', 'D · VISUAL TRANSLATION'],
+    boundary: ['“Downriver” remains a choice', 'The translation suggests direction without reconstructing an exact route.', 'B · TRANSLATION BOUNDARY']
   },
   {
-    tag: '尾联 · 06 · 卷末可留',
-    poem: ['秋山何以可留？', '任凭春芳消歇，秋山仍值得停留；诗由景物转向精神选择。', 'B 文本细读'],
-    painting: ['开谷与路径代替新奇观', '卷末用开放谷地与可进入的小径减慢观看；半隐檐线只是次要停驻暗示。', 'D 图像转译'],
-    research: ['与《招隐士》的反向回应', '常见解释认为“王孙”回应劝归传统；这是通行阐释，不是唯一意图。', 'B 通行解释']
+    tag: '06 · FADE / REMAIN',
+    reading: ['The scene becomes a choice', 'Description gives way to a judgement: this autumn world is a place where one may remain.', 'B · CLOSE READING'],
+    design: ['The valley opens', 'Fewer objects, a path and a small hidden eave slow the final act of looking.', 'D · VISUAL TRANSLATION'],
+    boundary: ['Wangsun remains open', 'The traditional address does not identify one fixed person in the image.', 'B · RECEIVED READING']
   }
 ];
+
+const ZH_STOPS = [
+  {
+    tag: '01 · 新雨入山',
+    reading: ['“空”不是无人', '“空山”首先描述清明、幽静的感知空间，而不是没有人的地理事实。', 'B · 通行解释'],
+    design: ['雨脚由左向右消散', '湿石、低山与逐渐明亮的画面转译天气变化。', 'D · 视觉转译'],
+    boundary: ['界面不是历史复原', '画面为本项目原创，不指认王维曾见过的真实地点。', 'D · 研究边界']
+  },
+  {
+    tag: '02 · 明月松间',
+    reading: ['光有了方向', '月光从松枝之间被感知，而不是一个孤立的文化符号。', 'B · 细读'],
+    design: ['松枝切分月光', '向下的光束把视线从明月引向下一幕的清泉。', 'D · 视觉转译'],
+    boundary: ['不把松等同诗人格', '松的道德象征可以讨论，但界面首先回应诗句的空间关系。', 'B · 解释边界']
+  },
+  {
+    tag: '03 · 清泉石上',
+    reading: ['图像开始有声', '静止的月光与流动的清泉构成视觉和听觉的平衡。', 'B · 细读'],
+    design: ['水流带动视线', '弯曲水线穿过不规则山石，让观看从上方向下移动。', 'D · 视觉转译'],
+    boundary: ['不指认真实山泉', '画面呈现的是联句内部的关系，而不是王维见过的具体地点。', 'D · 研究边界']
+  },
+  {
+    tag: '04 · 竹喧人归',
+    reading: ['先闻其声，后见其人', '先听见竹林喧响，随后才辨认出归来的浣女。', 'B · 细读'],
+    design: ['竹叶先动，人物后出现', '从左到右的节奏保留句序，也避免人物抢占景观。', 'D · 视觉转译'],
+    boundary: ['劳动者不是装饰仕女', '诗中并未提供服饰、神情或人物生平等细节。', 'B · 证据边界']
+  },
+  {
+    tag: '05 · 莲动舟下',
+    reading: ['由迹象发现行动', '莲叶先动，渔舟随后才在视觉中显现。', 'B · 细读'],
+    design: ['水纹、莲叶、舟影', '环境留下的痕迹逐步揭示造成变化的人类行动。', 'D · 视觉转译'],
+    boundary: ['“下”保留方向空间', '译文暗示水流方向，但不重建一条确定的真实航线。', 'B · 翻译边界']
+  },
+  {
+    tag: '06 · 春歇可留',
+    reading: ['风景转成选择', '景物描写最终转向判断：这个秋日世界可以让人留下。', 'B · 细读'],
+    design: ['卷末开谷', '减少物象，以小径和隐约屋檐放慢最后一幕的观看。', 'D · 视觉转译'],
+    boundary: ['王孙的指向保持开放', '传统称谓并不要求画面确认一个唯一、固定的人物。', 'B · 通行解释']
+  }
+];
+
+const STOPS = document.documentElement.lang.startsWith('zh') ? ZH_STOPS : EN_STOPS;
 
 document.addEventListener('DOMContentLoaded', () => {
   const $ = (selector, context = document) => context.querySelector(selector);
   const $$ = (selector, context = document) => [...context.querySelectorAll(selector)];
-  const roll = $('.handscroll');
-  const range = $('.scroll-progress');
-  const step = $('.step');
-  const hint = $('.hint');
-  const note = $('.scroll-note');
+  const scroll = $('.handscroll');
   const scenes = $$('.scene');
   const stopButtons = $$('.stop-picker button');
-  const couplets = ['首联', '颔联', '颔联', '颈联', '颈联', '尾联'];
-  let dragging = false;
-  let startX = 0;
-  let startScroll = 0;
+  const viewButtons = $$('.view-tabs button');
+  const range = $('.scroll-range');
+  const output = $('.range-row output');
+  const note = $('.stop-note');
   let current = 0;
-  let lens = 'poem';
+  let view = 'reading';
+  let dragging = false;
+  let pointerStart = 0;
+  let scrollStart = 0;
 
-  function renderNote() {
-    const content = STOPS[current][lens];
+  const positions = () => scenes.map(scene => scene.offsetLeft);
+
+  function render() {
+    const content = STOPS[current][view];
     note.querySelector('span').textContent = STOPS[current].tag;
     note.querySelector('h3').textContent = content[0];
     note.querySelector('p').textContent = content[1];
     note.querySelector('small').textContent = content[2];
-  }
-
-  function stopPositions() {
-    const max = Math.max(0, roll.scrollWidth - roll.clientWidth);
-    return scenes.map(scene => {
-      const centered = scene.offsetLeft - (roll.clientWidth - scene.offsetWidth) / 2;
-      return Math.max(0, Math.min(max, centered));
-    });
-  }
-
-  function goToStop(index, behavior = 'smooth') {
-    roll.scrollTo({ left: stopPositions()[index], behavior });
-  }
-
-  function sync() {
-    const max = roll.scrollWidth - roll.clientWidth;
-    const position = max ? roll.scrollLeft / max : 0;
-    const positions = stopPositions();
-    range.value = position * 100;
-    current = positions.reduce((best, value, index) =>
-      Math.abs(value - roll.scrollLeft) < Math.abs(positions[best] - roll.scrollLeft) ? index : best, 0);
-    step.textContent = `${couplets[current]} · 0${current + 1} / 06`;
+    output.value = `0${current + 1} / 06`;
     stopButtons.forEach((button, index) => {
       if (index === current) button.setAttribute('aria-current', 'true');
       else button.removeAttribute('aria-current');
     });
-    renderNote();
-    if (roll.scrollLeft > 20) hint.classList.add('hidden');
   }
 
-  roll.addEventListener('scroll', sync, { passive: true });
-  roll.addEventListener('wheel', event => {
+  function sync() {
+    const max = scroll.scrollWidth - scroll.clientWidth;
+    range.value = max ? scroll.scrollLeft / max * 100 : 0;
+    const anchors = positions();
+    current = anchors.reduce((best, left, index) =>
+      Math.abs(left - scroll.scrollLeft) < Math.abs(anchors[best] - scroll.scrollLeft) ? index : best, 0);
+    render();
+  }
+
+  function goTo(index, behavior = 'smooth') {
+    scroll.scrollTo({ left: positions()[index], behavior });
+  }
+
+  scroll.addEventListener('scroll', sync, { passive: true });
+  scroll.addEventListener('wheel', event => {
     if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
       event.preventDefault();
-      roll.scrollLeft += event.deltaY;
+      scroll.scrollLeft += event.deltaY;
     }
   }, { passive: false });
-  roll.addEventListener('pointerdown', event => {
+  scroll.addEventListener('pointerdown', event => {
     dragging = true;
-    startX = event.clientX;
-    startScroll = roll.scrollLeft;
-    roll.setPointerCapture(event.pointerId);
-    roll.classList.add('dragging');
+    pointerStart = event.clientX;
+    scrollStart = scroll.scrollLeft;
+    scroll.setPointerCapture(event.pointerId);
+    scroll.classList.add('dragging');
   });
-  roll.addEventListener('pointermove', event => {
-    if (dragging) roll.scrollLeft = startScroll - (event.clientX - startX);
+  scroll.addEventListener('pointermove', event => {
+    if (dragging) scroll.scrollLeft = scrollStart - (event.clientX - pointerStart);
   });
-  ['pointerup', 'pointercancel'].forEach(type => roll.addEventListener(type, () => {
+  ['pointerup', 'pointercancel'].forEach(type => scroll.addEventListener(type, () => {
     dragging = false;
-    roll.classList.remove('dragging');
+    scroll.classList.remove('dragging');
   }));
-  roll.addEventListener('keydown', event => {
-    if (event.key === 'ArrowRight') {
-      event.preventDefault();
-      goToStop(Math.min(5, current + 1));
-    }
-    if (event.key === 'ArrowLeft') {
-      event.preventDefault();
-      goToStop(Math.max(0, current - 1));
-    }
+  scroll.addEventListener('keydown', event => {
+    if (event.key === 'ArrowRight') { event.preventDefault(); goTo(Math.min(5, current + 1)); }
+    if (event.key === 'ArrowLeft') { event.preventDefault(); goTo(Math.max(0, current - 1)); }
   });
+
   range.addEventListener('input', () => {
-    roll.scrollLeft = (roll.scrollWidth - roll.clientWidth) * (range.value / 100);
+    scroll.scrollLeft = (scroll.scrollWidth - scroll.clientWidth) * range.value / 100;
   });
   stopButtons.forEach((button, index) => button.addEventListener('click', () => {
-    goToStop(index);
-    roll.focus({ preventScroll: true });
+    goTo(index);
+    scroll.focus({ preventScroll: true });
+  }));
+  viewButtons.forEach(button => button.addEventListener('click', () => {
+    view = button.dataset.view;
+    viewButtons.forEach(item => {
+      const active = item === button;
+      item.classList.toggle('active', active);
+      item.setAttribute('aria-pressed', String(active));
+    });
+    render();
   }));
 
-  $$('.lens button').forEach(button => {
-    button.setAttribute('aria-pressed', button.classList.contains('active'));
-    button.addEventListener('click', () => {
-      lens = button.dataset.lens;
-      $$('.lens button').forEach(item => {
-        item.classList.toggle('active', item === button);
-        item.setAttribute('aria-pressed', item === button);
-      });
-      renderNote();
-    });
-  });
-
-  $$('.samples button').forEach(button => {
-    button.setAttribute('aria-pressed', 'false');
-    button.addEventListener('click', () => {
-      const active = button.getAttribute('aria-pressed') !== 'true';
-      button.setAttribute('aria-pressed', String(active));
-      button.classList.toggle('active', active);
-      $(`.layer-demo .${button.dataset.layer}`).classList.toggle('visible', active);
-    });
-  });
-
-  $('.unroll').addEventListener('click', () => {
-    $('.prologue').classList.add('opened');
-    setTimeout(() => {
-      $('#exhibition').scrollIntoView({ behavior: 'smooth' });
-      setTimeout(() => roll.focus({ preventScroll: true }), 650);
-    }, 850);
+  $('.open-scroll').addEventListener('click', () => {
+    $('.hero').classList.add('opened');
+    setTimeout(() => $('#scroll').scrollIntoView({ behavior: 'smooth' }), 650);
   });
   $('.menu').addEventListener('click', event => {
     const open = event.currentTarget.getAttribute('aria-expanded') === 'true';
     event.currentTarget.setAttribute('aria-expanded', String(!open));
-    $('.museum-header nav').classList.toggle('open', !open);
+    $('.site-header nav').classList.toggle('open', !open);
   });
-  $$('.museum-header nav a').forEach(link => link.addEventListener('click', () => {
-    $('.museum-header nav').classList.remove('open');
+  $$('.site-header nav a').forEach(link => link.addEventListener('click', () => {
+    $('.site-header nav').classList.remove('open');
     $('.menu').setAttribute('aria-expanded', 'false');
   }));
 
-  renderNote();
+  render();
   sync();
 });
