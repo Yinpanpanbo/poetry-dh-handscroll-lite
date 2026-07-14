@@ -1,0 +1,46 @@
+name: Deploy static site to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Assemble the static site
+        run: |
+          mkdir -p _site/planning/theme-review
+          cp index.html zh.html style.css style-en.css app.js app-en.js _site/
+          mkdir -p _site/assets/handscroll
+          cp assets/handscroll/autumn-mountain-scroll.svg _site/assets/handscroll/
+          cp assets/handscroll/azurite-cc0.jpg _site/assets/handscroll/
+          cp "planning/theme-review/诗歌文化主题方案评审.pdf" _site/planning/theme-review/
+          touch _site/.nojekyll
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

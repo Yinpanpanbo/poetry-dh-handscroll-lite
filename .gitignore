@@ -1,0 +1,17 @@
+# Local course references and discarded design studies
+ppt/
+prototypes/
+
+# Local browser/PDF review output
+planning/screenshots/
+planning/theme-review/pdf-preview/
+docs/preview-product/
+docs/preview-report/
+
+# Superseded large painting references; production uses the original SVG
+assets/handscroll/thousand-li-*
+
+# Local build and OS/editor output
+_site/
+.DS_Store
+*.swp

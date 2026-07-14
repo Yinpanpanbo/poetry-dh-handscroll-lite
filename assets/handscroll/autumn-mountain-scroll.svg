@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9600" height="720" viewBox="0 0 9600 720" role="img" aria-labelledby="title desc">
+  <title id="title">Rain-Cleared Autumn Mountain</title>
+  <desc id="desc">An original six-pause digital handscroll. Rain clears over an empty valley; moonlight crosses pine branches; a spring runs over stones; bamboo movement reveals returning washerwomen; moving lotus leaves reveal a fishing boat; an open path enters a valley where one may remain.</desc>
+  <defs>
+    <linearGradient id="silk" x2="0" y2="1"><stop stop-color="#eee5d1"/><stop offset=".5" stop-color="#e3dcc5"/><stop offset="1" stop-color="#cecbb1"/></linearGradient>
+    <linearGradient id="farJade" x2="0" y2="1"><stop stop-color="#9bafa1" stop-opacity=".18"/><stop offset="1" stop-color="#55756a" stop-opacity=".52"/></linearGradient>
+    <linearGradient id="midJade" x2="0" y2="1"><stop stop-color="#789586" stop-opacity=".55"/><stop offset="1" stop-color="#315d55" stop-opacity=".86"/></linearGradient>
+    <linearGradient id="nearJade" x2="0" y2="1"><stop stop-color="#416d61"/><stop offset="1" stop-color="#173f3c"/></linearGradient>
+    <linearGradient id="mineralBlue" x2="0" y2="1"><stop stop-color="#4f8587"/><stop offset="1" stop-color="#1f5965"/></linearGradient>
+    <linearGradient id="water" x2="0" y2="1"><stop stop-color="#c9d9cd" stop-opacity=".22"/><stop offset="1" stop-color="#527f7b" stop-opacity=".72"/></linearGradient>
+    <linearGradient id="stone" x2="0" y2="1"><stop stop-color="#9d8e6c"/><stop offset="1" stop-color="#4f5145"/></linearGradient>
+    <radialGradient id="moon"><stop stop-color="#fff1bc"/><stop offset=".35" stop-color="#dbc67f"/><stop offset="1" stop-color="#dbc67f" stop-opacity="0"/></radialGradient>
+    <filter id="silkNoise" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency=".012 .18" numOctaves="2" seed="31" result="noise"/>
+      <feColorMatrix in="noise" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .11 0"/>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="brush"><feTurbulence type="fractalNoise" baseFrequency=".008" numOctaves="2" seed="11" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="7"/></filter>
+    <pattern id="fiber" width="74" height="52" patternUnits="userSpaceOnUse"><path d="M4 14h28m14 21h23M12 47h16" stroke="#806f50" stroke-width="1" opacity=".09"/></pattern>
+  </defs>
+
+  <rect width="9600" height="720" fill="url(#silk)"/>
+  <rect width="9600" height="720" fill="url(#fiber)"/>
+
+  <!-- Three continuous landscape layers: the borders at 1600px intervals remain invisible. -->
+  <g filter="url(#silkNoise)">
+    <path d="M0 395C260 350 470 365 690 300S1110 330 1420 290 1830 220 2130 295 2540 345 2860 268 3210 225 3500 310 3920 350 4250 280 4620 300 4960 250 5250 318 5660 365 6040 302 6410 330 6740 276 7060 324 7470 362 7830 298 8200 270 8520 322 8890 350 9200 296 9600 318V525H0Z" fill="url(#farJade)" filter="url(#brush)"/>
+    <path d="M0 500C220 442 390 402 650 438s360-82 610-30 410 38 690-28 420-100 710-26 390 122 690 48 420-142 720-54 430 128 710 52 430-125 720-60 400 110 700 44 420-115 720-51 430 100 730 37 430-118 740-45 420 90 690 50 390-70 650-46 450 100 700 58V620H0Z" fill="url(#midJade)" opacity=".86" filter="url(#brush)"/>
+    <path d="M0 612C260 560 520 590 780 545s500 56 760 20 450-80 710-18 520 58 760 5 480-37 720 28 520 32 770-14 500-12 760 30 510 8 760-34 490 26 770 22 520-58 790-20 540 52 820 12V720H0Z" fill="#537769" opacity=".38"/>
+  </g>
+
+  <!-- A changing mist path connects the six pauses without becoming a ruler-straight band. -->
+  <path d="M0 438C420 366 900 456 1450 405S2470 390 3000 455 4070 458 4550 410 5600 432 6100 485 7160 505 7700 440 8870 402 9600 470" fill="none" stroke="#f3ead7" stroke-width="74" opacity=".34" filter="url(#soft)"/>
+  <path d="M0 452C480 390 940 468 1480 422S2500 410 3000 466 4020 465 4560 426 5590 447 6110 498 7110 516 7710 454 8860 420 9600 484" fill="none" stroke="#eff0df" stroke-width="22" opacity=".34"/>
+
+  <!-- 01: after fresh rain — wet stone and clearing air, no people. -->
+  <g id="rain-clearing">
+    <path d="M0 620Q260 552 520 590T1080 562Q1330 532 1600 582V720H0Z" fill="url(#water)"/>
+    <g stroke="#3e6961" stroke-width="3" opacity=".25" stroke-linecap="round">
+      <path d="m55 102-18 65m96-38-16 72m104-116-20 78m110-46-18 81m101-129-17 76m113-31-20 83"/>
+      <path d="m78 250-13 45m112-24-15 52m115-76-14 55m120-23-17 57"/>
+    </g>
+    <path d="M0 535Q270 395 610 472T1180 438Q1370 430 1600 492V638H0Z" fill="#466f63" opacity=".66" filter="url(#brush)"/>
+    <path d="M0 570Q280 475 575 522T1060 505Q1320 460 1600 530V665H0Z" fill="#254f49" opacity=".7"/>
+    <g fill="url(#stone)" filter="url(#brush)"><path d="M105 620q34-74 130-82 108-8 173 63-42 63-145 72-105 8-158-53Z"/><path d="M360 661q55-95 183-96 137-2 224 82-56 71-190 78-142 7-217-64Z"/><path d="M760 635q27-70 111-79 91-10 153 52-35 58-117 67-88 10-147-40Z"/></g>
+    <g fill="none" stroke="#c7b78e" stroke-width="7" opacity=".55"><path d="m160 602 150-18"/><path d="m442 635 208-15"/><path d="m820 616 116-13"/></g>
+    <path d="M30 668q390-95 760-24t810-31" fill="none" stroke="#dbe1d1" stroke-width="15" opacity=".62"/>
+    <path d="M50 682q390-90 755-18t795-28" fill="none" stroke="#4f817d" stroke-width="7" opacity=".8"/>
+    <g fill="#2d554d" opacity=".76"><circle cx="710" cy="472" r="12"/><circle cx="742" cy="459" r="17"/><circle cx="780" cy="476" r="10"/></g>
+  </g>
+
+  <!-- 02: the moon is cut by irregular pine branches; light falls toward wet stone. -->
+  <g id="moon-pines">
+    <circle cx="2350" cy="165" r="155" fill="url(#moon)"/>
+    <circle cx="2350" cy="165" r="48" fill="#dfc984" opacity=".88"/>
+    <path d="M1715 690c42-190 54-342 81-548M1915 690c-5-205 24-395 48-555M2135 690c36-178 31-325 62-493" fill="none" stroke="#263e34" stroke-width="29" stroke-linecap="round"/>
+    <g fill="none" stroke-linecap="round">
+      <path d="M1792 236c-146 10-242 54-337 128M1800 294c146-8 246 31 348 96M1783 376c-125 17-218 61-315 134M1958 206c122 5 226 41 314 104M1952 286c-118 15-204 52-292 118M2180 277c128 12 230 55 322 120M2164 359c-113 14-194 55-283 126" stroke="#254f42" stroke-width="23"/>
+      <path d="M1792 236c-130 16-222 54-306 116M1800 294c130-5 220 32 304 83M1958 206c105 7 196 39 276 90M2180 277c110 13 202 48 280 105" stroke="#789072" stroke-width="9" opacity=".7"/>
+    </g>
+    <g fill="none" stroke="#244d40" stroke-width="5" stroke-linecap="round" opacity=".92">
+      <path d="m1490 352-76-22m82 34-72 8m92-2-62 35m610-108 72-33m-70 45 82-2m-74 18 67 28m253 26 78-25m-73 38 83 5m-76 14 66 34"/>
+      <path d="m1580 430-73-20m80 31-76 14m562-44-72-27m78 39-79 6m300 45 72-31m-65 45 78-5"/>
+    </g>
+    <path d="M2410 205 3140 402" stroke="#f2df9d" stroke-width="35" opacity=".2" filter="url(#soft)"/>
+    <path d="M2450 218 3132 396" stroke="#f2e3ad" stroke-width="10" opacity=".34"/>
+    <ellipse cx="3118" cy="405" rx="90" ry="31" fill="#e1d4a8" opacity=".5"/>
+    <path d="M1600 648q390-72 760-15t840-18" fill="none" stroke="#355f57" stroke-width="17" opacity=".62"/>
+  </g>
+
+  <!-- 03: the same bright direction is answered by a spring; it is not water from the moon. -->
+  <g id="spring-stones">
+    <path d="M3210 404C3420 425 3370 506 3600 520s292-48 500 20 212 72 500 110" fill="none" stroke="#e7eadc" stroke-width="48" opacity=".9"/>
+    <path d="M3210 404C3420 425 3370 506 3600 520s292-48 500 20 212 72 500 110" fill="none" stroke="#4c8988" stroke-width="20"/>
+    <path d="M3220 406C3420 432 3380 492 3600 512s300-43 500 23 220 75 500 109" fill="none" stroke="#d9f0e5" stroke-width="5"/>
+    <g fill="url(#stone)" filter="url(#brush)"><ellipse cx="3400" cy="520" rx="150" ry="78"/><ellipse cx="3740" cy="590" rx="205" ry="88"/><ellipse cx="4160" cy="600" rx="164" ry="73"/><ellipse cx="4500" cy="653" rx="122" ry="48"/></g>
+    <g fill="none" stroke="#cbbd91" stroke-width="8" opacity=".55"><path d="m3280 505 180-20"/><path d="m3600 570 240 15"/><path d="m4020 583 210 13"/></g>
+    <g fill="#315f52" opacity=".8"><path d="m3470 455 28-66 18 70 31-45 5 67Z"/><path d="m4270 535 20-55 17 58 28-38 7 49Z"/></g>
+    <path d="M4600 650q120-38 250-26" stroke="#d8e4d8" stroke-width="14" fill="none" opacity=".65"/>
+  </g>
+
+  <!-- 04: bamboo movement is primary; returning washerwomen appear only after it. -->
+  <g id="bamboo-return">
+    <g stroke="#244b40" fill="none" stroke-linecap="round">
+      <path d="M4870 690 4930 115M5015 690l34-620M5140 690l80-565M5280 690l48-505" stroke-width="25"/>
+      <path d="m4925 230-165-92m175 142 175-118m-104 210-176-88m209 32 187-110m-90 263-186-87m222 18 164-102m-105 217-154-74m201 21 147-85" stroke-width="10"/>
+      <path d="m4928 230-134-76m143 124 144-93m-73 184-148-70m180 15 154-87m-54 248-156-71m188 9 137-80" stroke="#789371" stroke-width="7" opacity=".75"/>
+    </g>
+    <g fill="#315e4d" opacity=".94">
+      <path d="M4744 126q58-22 104 14-55 29-104-14Z"/><path d="M4825 176q63-9 97 34-61 16-97-34Z"/><path d="M5065 146q58-20 101 17-55 27-101-17Z"/><path d="M5003 250q-56-25-101 8 52 32 101-8Z"/>
+      <path d="M4868 337q-65-13-102 29 62 21 102-29Z"/><path d="M5115 326q62-18 105 22-60 26-105-22Z"/><path d="M5238 200q64-10 99 34-62 18-99-34Z"/><path d="M5160 444q-58-24-102 11 55 31 102-11Z"/>
+      <path d="M5342 319q63-13 101 29-61 21-101-29Z"/><path d="M5260 514q-62-17-103 23 60 24 103-23Z"/><path d="M5405 410q61-19 105 20-58 27-105-20Z"/>
+    </g>
+    <!-- wind/rhythm lines leave bamboo, then become path rhythm rather than morphing into lotus. -->
+    <path d="M5140 340q310 70 560 178t700 82" fill="none" stroke="#476f62" stroke-width="11" opacity=".38"/>
+    <path d="M5140 360q320 76 560 174t700 82" fill="none" stroke="#d7ded0" stroke-width="5" opacity=".7"/>
+    <path d="M4800 674q510-105 930-34t670-10" fill="none" stroke="#315c52" stroke-width="21" opacity=".74"/>
+    <!-- two small returning workers: no court dress, faces, or invented tools. -->
+    <g fill="#303f36" stroke="#303f36" stroke-linecap="round">
+      <circle cx="5535" cy="548" r="14"/><path d="M5514 566q22-14 43 1l19 68q-42 21-82-1Z"/><path d="m5507 625-22 50m67-47 31 45" fill="none" stroke-width="10"/>
+      <circle cx="5685" cy="577" r="13"/><path d="M5666 594q20-12 39 2l17 58q-38 18-73-1Z"/><path d="m5662 646-17 42m52-40 25 38" fill="none" stroke-width="9"/>
+    </g>
+    <path d="M5547 581q44 16 72 55" stroke="#88483d" stroke-width="9" opacity=".82" fill="none"/>
+  </g>
+
+  <!-- 05: directional ripples and parted lotus are seen before the low fishing boat. -->
+  <g id="lotus-boat">
+    <path d="M6400 570q420-64 870 20t730-6V720H6400Z" fill="url(#water)" opacity=".9"/>
+    <g fill="none" stroke="#dbe4d7" opacity=".72"><path d="M6400 548q270 78 550 50" stroke-width="9"/><path d="M6480 590q360 86 720 31" stroke-width="7"/><path d="M6630 642q330 64 680 25" stroke-width="6"/></g>
+    <g fill="#4b765f" stroke="#274c43" stroke-width="3">
+      <path d="M6630 560c44-38 108-35 148 5-53 35-103 32-148-5Z"/>
+      <path d="M6790 622c31-31 85-34 122-4-37 31-78 36-122 4Z"/>
+      <path d="M6900 538c52-40 119-29 154 14-62 29-111 23-154-14Z"/>
+      <path d="M7050 600c39-38 95-34 133 2-45 31-88 33-133-2Z"/>
+      <path d="M7160 548c42-30 93-22 125 12-48 24-87 18-125-12Z"/>
+    </g>
+    <g stroke="#315d4c" stroke-width="7"><path d="m6698 562-15 91"/><path d="m6845 621 5 58"/><path d="m6975 544-18 101"/><path d="m7117 598 7 72"/></g>
+    <!-- low river craft, partly hidden by leaves; no triangular sail. -->
+    <path d="M7270 574q132 34 305 3l-48 61q-122 39-227-1Z" fill="#4a4033"/>
+    <path d="M7340 574v-62h145l48 65Z" fill="#847256" opacity=".86"/>
+    <path d="M7390 514q50-44 98 0" fill="none" stroke="#d0c3a2" stroke-width="13" opacity=".75"/>
+    <circle cx="7498" cy="550" r="12" fill="#303a33"/><path d="m7500 564 18 48m-3-20 35-28" stroke="#303a33" stroke-width="9" stroke-linecap="round"/>
+    <path d="M7528 615q245 18 470-24" fill="none" stroke="#dce5d8" stroke-width="11" opacity=".72"/>
+    <path d="M7580 639q220 24 420-21" fill="none" stroke="#4d827e" stroke-width="6"/>
+  </g>
+
+  <!-- 06: the wake becomes an open valley path. A tiny, half-hidden eave remains secondary. -->
+  <g id="open-valley">
+    <path d="M8000 615C8270 580 8420 510 8670 532s345 108 585 16 245-37 345-8V720H8000Z" fill="#668777" opacity=".48"/>
+    <path d="M8000 643C8280 618 8440 548 8680 575s330 94 530 28 260-58 390-24V720H8000Z" fill="#315f55" opacity=".66"/>
+    <path d="M8000 630C8230 644 8320 614 8460 590s250-16 390 30 245 44 370 4 245-42 380-12" fill="none" stroke="#d8ded0" stroke-width="19" opacity=".75"/>
+    <path d="M8030 641C8240 651 8350 620 8470 601s250-8 390 31 248 35 370 3 240-33 370-11" fill="none" stroke="#8c815f" stroke-width="7" opacity=".7"/>
+    <!-- pine and roots make a threshold, not a monument. -->
+    <path d="M8630 690c20-142 12-260 45-420" stroke="#2f4338" stroke-width="28" fill="none" stroke-linecap="round"/>
+    <g fill="none" stroke="#294f42" stroke-width="21" stroke-linecap="round"><path d="M8670 330c-132 4-226 38-318 102M8665 392c126 8 220 43 304 105M8660 472c-116 14-205 51-285 112"/></g>
+    <g fill="none" stroke="#789073" stroke-width="7" stroke-linecap="round"><path d="M8670 330c-112 8-202 39-278 90M8665 392c110 11 194 42 270 90"/></g>
+    <g fill="none" stroke="#244d40" stroke-width="5" stroke-linecap="round"><path d="m8390 414-72-20m78 34-75 12m579 46 72-22m-65 38 77 9m-632 62-66-18m72 31-70 17"/></g>
+    <!-- one tiny eave, under 3% of the scene, half hidden in mist. -->
+    <path d="m9130 560 64-35 75 33Z" fill="#34453c" opacity=".84"/>
+    <rect x="9160" y="560" width="72" height="45" fill="#8f7b5a" opacity=".46"/>
+    <path d="M9070 586q125-35 245-2" stroke="#ecdfc6" stroke-width="24" fill="none" opacity=".5" filter="url(#soft)"/>
+    <g fill="#334b41" opacity=".64"><circle cx="8830" cy="590" r="9"/><path d="m8830 600-4 35m4-19 17 16m-21 4-12 28m14-27 15 26" stroke="#334b41" stroke-width="7"/></g>
+    <path d="M9250 662q160-34 350-5" fill="none" stroke="#456b5f" stroke-width="13" opacity=".55"/>
+  </g>
+
+  <!-- Fine bank lines cross every interactive border and keep the work one scroll. -->
+  <g fill="none" stroke="#6a765f" stroke-width="3" opacity=".34">
+    <path d="M0 696C620 663 1050 708 1600 682S2630 698 3200 674 4230 706 4800 681 5820 705 6400 678 7420 701 8000 675 9020 700 9600 680"/>
+    <path d="M0 708C610 690 1080 720 1600 701S2660 714 3200 695 4260 718 4800 699 5860 719 6400 697 7460 716 8000 694 9060 716 9600 699"/>
+  </g>
+</svg>

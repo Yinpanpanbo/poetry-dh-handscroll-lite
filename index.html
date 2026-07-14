@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#102824">
+  <meta name="description" content="A bilingual digital handscroll close-reading Wang Wei's Autumn Evening in the Mountains.">
+  <title>Autumn Evening in the Mountains · A Bilingual Digital Handscroll</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-en.css">
+  <script src="app-en.js" defer></script>
+</head>
+<body class="page-en">
+  <a class="skip" href="#exhibition">Skip to the handscroll</a>
+  <header class="museum-header">
+    <a class="brand" href="#top"><i aria-hidden="true">山</i><span>POETRY AS PASSAGE<small>A DIGITAL HUMANITIES EXHIBITION</small></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#exhibition">Scroll</a><a href="#syntax-title">Grammar</a><a href="#context-title">Texts</a><a href="#materials">Medium</a><a href="#method">Method</a><a class="language" href="zh.html" lang="zh-CN">中文版</a>
+    </nav>
+    <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <span class="edition">BILINGUAL EDITION · 01</span>
+  </header>
+
+  <main id="top">
+    <section class="prologue">
+      <div class="room-light"></div>
+      <div class="label">
+        <p>TANG POETRY · A CURATORIAL TRANSLATION</p>
+        <h1>Autumn Evening<br><em>in the Mountains</em></h1>
+        <p class="title-cn" lang="zh-CN">山居秋暝</p>
+        <dl>
+          <div><dt>POET</dt><dd>Wang Wei <span lang="zh-CN">王维</span></dd></div>
+          <div><dt>FORM</dt><dd>Five-character regulated verse</dd></div>
+          <div><dt>MODE</dt><dd>Digital handscroll</dd></div>
+        </dl>
+      </div>
+      <div class="closed-scroll" aria-hidden="true"><span></span><figure><img src="assets/handscroll/autumn-mountain-scroll.svg" alt=""></figure><span></span></div>
+      <div class="promise">
+        <p>How does an apparently “empty” autumn mountain become a world in which one may remain?</p>
+        <button class="unroll" type="button">Enter the mountain <i>→</i></button>
+        <small>Original digital illustration; a reading of the poem, not a reconstruction of Wang Wei’s landscape.</small>
+      </div>
+      <span class="scroll-down">DESCEND INTO THE EXHIBITION ↓</span>
+    </section>
+
+    <section class="exhibition" id="exhibition">
+      <div class="exhibition-head">
+        <div><span>EXHIBITION 01</span><h2>Following the Poem into the Mountain</h2></div>
+        <p>The four couplets establish a world in sequence: weather, perception, human traces, and finally a choice. The six pauses below turn that verbal movement into a route through an original handscroll.</p>
+      </div>
+      <div class="lens" role="group" aria-label="Interpretive layer">
+        <button class="active" data-lens="poem">Read the line</button><button data-lens="painting">Trace the path</button><button data-lens="research">Check the evidence</button>
+      </div>
+      <div class="scroll-shell">
+        <div class="silk-top"></div>
+        <div class="handscroll" tabindex="0" aria-label="Bilingual horizontal handscroll for Autumn Evening in the Mountains. Browse with the mouse wheel, drag, arrow keys, or the range control.">
+          <article class="scene scene-1" data-step="1" data-couplet="Opening couplet"><div class="verse"><div class="verse-cn" lang="zh-CN"><b>空山新雨后</b><b>天气晚来秋</b></div><div class="verse-en"><span>After fresh rain in the empty mountains,<br>the evening air turns autumnal.</span><small>Project translation</small></div></div></article>
+          <article class="scene scene-2" data-step="2" data-couplet="Second couplet"><div class="verse"><div class="verse-cn" lang="zh-CN"><b>明月松间照</b></div><div class="verse-en"><span>The bright moon shines between the pines;</span><small>Project translation</small></div></div></article>
+          <article class="scene scene-3" data-step="3" data-couplet="Second couplet"><div class="verse"><div class="verse-cn" lang="zh-CN"><b>清泉石上流</b></div><div class="verse-en"><span>a clear spring flows over stones.</span><small>Project translation</small></div></div></article>
+          <article class="scene scene-4" data-step="4" data-couplet="Third couplet"><div class="verse"><div class="verse-cn" lang="zh-CN"><b>竹喧归浣女</b></div><div class="verse-en"><span>Bamboo resounds—the washerwomen return;</span><small>Project translation</small></div></div></article>
+          <article class="scene scene-5" data-step="5" data-couplet="Third couplet"><div class="verse"><div class="verse-cn" lang="zh-CN"><b>莲动下渔舟</b></div><div class="verse-en"><span>lotus leaves stir—a fishing boat moves downriver.</span><small>Project translation</small></div></div></article>
+          <article class="scene scene-6" data-step="6" data-couplet="Closing couplet"><div class="verse"><div class="verse-cn" lang="zh-CN"><b>随意春芳歇</b><b>王孙自可留</b></div><div class="verse-en"><span>Let spring blossoms fade as they will:<br><i>Wangsun</i>—you may remain.</span><small>Project translation</small></div></div></article>
+        </div>
+        <div class="scroll-note" aria-live="polite"><span>OPENING COUPLET · 01</span><h3>“Empty” does not mean uninhabited</h3><p>People and boats appear later. Here, “empty mountains” first names a quiet, spacious condition of perception.</p><small>B · RECEIVED READING</small></div>
+        <div class="silk-bottom"></div>
+      </div>
+      <div class="scroll-controls"><span class="hint">DRAG · WHEEL · ARROW KEYS</span><input class="scroll-progress" type="range" min="0" max="100" value="0" aria-label="Handscroll position"><span class="step">01 / 06</span></div>
+      <div class="stop-picker" role="group" aria-label="Jump to a reading stop">
+        <button type="button" data-stop="0" aria-current="true"><span>01</span><b>Rain / Autumn</b><small lang="zh-CN">空山新雨后 · 天气晚来秋</small></button>
+        <button type="button" data-stop="1"><span>02</span><b>Moon / Pines</b><small lang="zh-CN">明月松间照</small></button>
+        <button type="button" data-stop="2"><span>03</span><b>Spring / Stone</b><small lang="zh-CN">清泉石上流</small></button>
+        <button type="button" data-stop="3"><span>04</span><b>Bamboo / Return</b><small lang="zh-CN">竹喧归浣女</small></button>
+        <button type="button" data-stop="4"><span>05</span><b>Lotus / Boat</b><small lang="zh-CN">莲动下渔舟</small></button>
+        <button type="button" data-stop="5"><span>06</span><b>Fade / Remain</b><small lang="zh-CN">随意春芳歇 · 王孙自可留</small></button>
+      </div>
+    </section>
+
+    <section class="syntax" aria-labelledby="syntax-title">
+      <div class="syntax-head"><span>DIGITAL CLOSE READING · A MAP OF POETIC GRAMMAR</span><h2 id="syntax-title">How do eight lines move from “empty” to “remain”?</h2><p>The pauses are not decorative scenes. They follow syntax, sensory order, and the four-couplet structure, creating an interpretation that can be inspected and questioned.</p></div>
+      <div class="syntax-flow">
+        <article><b>01 · ENVIRONMENT</b><strong>rain · evening · autumn</strong><p>The poem clears away ordinary noise and establishes a cool, newly washed atmosphere.</p></article><i>→</i>
+        <article><b>02 · PERCEPTION</b><strong>between / over · shines / runs</strong><p>The eye moves from pines above to stone below; still light answers flowing water.</p></article><i>→</i>
+        <article><b>03 · HUMAN TRACES</b><strong>sound → return · stir → boat</strong><p>Sound and movement arrive before their human causes. The mountain becomes lived space.</p></article><i>→</i>
+        <article><b>04 · CHOICE</b><strong>fade → remain</strong><p>Description turns into judgement: why can an autumn mountain outweigh spring flowers?</p></article>
+      </div>
+      <small>A · PRIMARY TEXT &nbsp; B · TEXTUAL ANALYSIS / RECEIVED READING. This route is textually grounded, but it is not the only possible reading.</small>
+    </section>
+
+    <section class="context" aria-labelledby="context-title">
+      <div class="context-intro"><span>TEXTS IN DIALOGUE · ALLUSION AND RECEPTION</span><h2 id="context-title">Why bring these texts into the exhibition?</h2><p>The first three couplets ask what is present in the mountain; the last asks why one might stay. These three objects clarify the closing allusion, Wang Wei’s recurring techniques, and the later history of reading his poetry through painting.</p></div>
+      <div class="context-row">
+        <article class="complete"><span>A · PRIMARY TEXT / B · RECEIVED READING</span><h3><cite>Zhao Yinshi</cite>: return, or remain?</h3><blockquote lang="zh-CN">“王孙兮归来，山中兮不可以久留。”</blockquote><p><b>Why here:</b> “The wanderer may remain” is often read as reversing an earlier call to return from the mountains. The echo turns landscape description into a decision.</p><small><a href="https://zh.wikisource.org/wiki/楚辭/招隱士" target="_blank" rel="noopener">Check the Chinese source text</a> · not claimed as the poet’s only intention</small></article>
+        <article><span>A · PRIMARY TEXT / B · COMPARISON</span><h3><cite>Deer Enclosure</cite> and <cite>Bamboo Lodge</cite></h3><blockquote lang="zh-CN">“返景入深林”<br>“深林人不知”</blockquote><p><b>Why here:</b> A small same-author corpus shows Wang Wei repeatedly organising secluded space through light, sound, and slight human presence.</p><small><a href="https://zh.wikisource.org/wiki/鹿柴" target="_blank" rel="noopener">Deer Enclosure</a> · <a href="https://zh.wikisource.org/wiki/竹里館" target="_blank" rel="noopener">Bamboo Lodge</a></small></article>
+        <article><span>A · PRIMARY TEXT / C · RECEPTION HISTORY</span><h3>Su Shi: why later readers see paintings in Wang Wei</h3><blockquote lang="zh-CN">“味摩诘之诗，诗中有画。”</blockquote><p><b>Why here:</b> Su Shi’s exchange between poetry and painting shaped later reception. This digital handscroll extends that history; it does not claim to recover Wang Wei’s own visual plan.</p><small><a href="https://zh.wikisource.org/wiki/書摩詰藍田煙雨圖" target="_blank" rel="noopener">Check Su Shi’s text</a> · a Northern Song reception, not Tang authorial intent</small></article>
+      </div>
+    </section>
+
+    <section class="materials" id="materials">
+      <div class="section-title"><span>TRANSLATION WORKSHOP · MEDIUM AS ARGUMENT</span><h2>Why turn the poem into a mineral-colour handscroll?</h2><p>The pigments and the handscroll format are not evidence about Wang Wei’s original setting. They make our own act of translation visible: verbal sequence becomes spatial sequence, and reading becomes paced viewing.</p></div>
+      <div class="display-case">
+        <div class="pigment-main"><img class="mineral-photo" src="assets/handscroll/azurite-cc0.jpg" alt="A specimen of the blue mineral azurite"><p><span>M-01</span><b>Material reference · Azurite</b><a href="https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_Azurite_-_mineral.jpg" target="_blank" rel="noopener">Naturalis Biodiversity Center · CC0</a></p></div>
+        <div class="samples" aria-label="Conceptual colour layers"><button data-layer="ground"><i></i><b>Structural ground</b><small>Separates the mountain silhouette</small></button><button data-layer="green"><i></i><b>Mineral green</b><small>Adds the green tonal relation</small></button><button data-layer="blue"><i></i><b>Mineral blue</b><small>Adds the blue tonal relation</small></button></div>
+        <div class="layer-demo"><span class="mount ground"></span><span class="mount green"></span><span class="mount blue"></span><p>CONCEPTUAL COLOUR-LAYER STUDY<br><small>Not a reconstruction of any universal historical process</small></p></div>
+      </div>
+    </section>
+
+    <section class="method" id="method">
+      <div class="colophon"><p>CURATORIAL COLOPHON</p><h2>Use the poem as an index. Wander through the image. Return to the evidence.</h2></div>
+      <div class="method-copy">
+        <p class="lead">This page does not reconstruct a landscape once seen by Wang Wei. Its original illustration translates the poem’s sensory order into a navigable digital space, while each interpretive claim remains labelled by evidence type.</p>
+        <div class="method-chain"><span>poetic syntax</span><i>→</i><span>sensory cue</span><i>→</i><span>spatial order</span><i>→</i><span>interactive pause</span><i>→</i><span>documented claim</span></div>
+        <dl>
+          <div><dt>Base text</dt><dd>A widely circulated Chinese text, checked against <a href="https://zh.wikisource.org/wiki/山居秋暝" target="_blank" rel="noopener">Wikisource</a>.</dd></div>
+          <div><dt>Translation</dt><dd>An original project translation designed for this bilingual interface. <i>Wangsun</i> is a traditional literary address for a noble or a person away from home; who exactly is addressed remains open.</dd></div>
+          <div><dt>Image</dt><dd><cite>Rain-Cleared Autumn Mountain</cite>, an original project SVG composed from the poem’s sequence. It is a contemporary curatorial illustration, not an ancient artwork or historical reconstruction.</dd></div>
+          <div><dt>Evidence labels</dt><dd>A · primary text; B · textual analysis / received reading; C · reception history; D · curatorial translation.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="epilogue"><div class="end-scroll"><span></span><img src="assets/handscroll/autumn-mountain-scroll.svg" alt="A miniature view of the original Rain-Cleared Autumn Mountain digital handscroll"><span></span></div><p>What remains is not an uninhabited view, but a world where sharpened perception, human traces, and natural sounds coexist without displacing one another.</p><a href="#top">Return to the scroll head ↑</a></section>
+  </main>
+  <footer><div class="brand"><i aria-hidden="true">山</i><span>POETRY AS PASSAGE</span></div><p>Digital Humanities Group Project · 2026<br>Research boundaries and image credits appear in the colophon.</p><a href="planning/theme-review/诗歌文化主题方案评审.pdf">Theme decision archive (Chinese PDF)</a></footer>
+</body>
+</html>
