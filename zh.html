@@ -13,7 +13,7 @@
   <a class="skip-link" href="#scroll">跳至手卷</a>
   <header class="site-header">
     <a class="brand" href="#top"><span aria-hidden="true">山</span><b>诗境数字手卷</b></a>
-    <nav aria-label="主导航"><a href="#scroll">手卷</a><a href="#build">网页实现</a><a href="#credits">来源</a><a href="index.html">EN</a></nav>
+    <nav aria-label="主导航"><a href="#scroll">手卷</a><a href="#poet">王维</a><a href="#credits">延伸阅读</a><a href="index.html">EN</a></nav>
     <button class="menu" type="button" aria-label="展开导航" aria-expanded="false">☰</button>
   </header>
 
@@ -62,20 +62,7 @@
       </div>
     </section>
 
-    <section class="build-section" id="build" aria-labelledby="build-title">
-      <header class="section-intro light">
-        <div><p class="eyebrow">少量、可解释的技术</p><h2 id="build-title">四项前端基础<br>完成整个页面。</h2></div>
-        <p>项目不使用框架。每个可见效果都能从一小段 HTML、CSS 或 JavaScript 中讲清楚。</p>
-      </header>
-      <div class="tech-grid">
-        <article><span>01 · HTML</span><h3>组织内容意义</h3><p>语义章节、文章、语言属性和无障碍按钮，区分原诗、翻译与控制。</p><code>&lt;article class="scene"&gt;</code></article>
-        <article><span>02 · CSS</span><h3>构成横向手卷</h3><p>Grid 组织展陈框架，Flexbox 排列六幕，媒体查询负责手机布局。</p><code>display: flex;</code></article>
-        <article><span>03 · 动画</span><h3>只动画一个状态</h3><p>JavaScript 添加状态类，CSS 用 clip-path 完成启卷过程。</p><code>.hero.opened { … }</code></article>
-        <article><span>04 · JAVASCRIPT</span><h3>同步界面状态</h3><p>一个当前停驻点同时更新位置、题跋、进度和按钮。</p><code>scrollTo({ left })</code></article>
-      </div>
-    </section>
-
-    <section class="poet-section" aria-labelledby="poet-title">
+    <section class="poet-section" id="poet" aria-labelledby="poet-title">
       <figure>
         <img src="assets/handscroll/wang-wei-portrait.jpg" alt="清代李瀛所绘王维像">
         <figcaption>王维像 · 清代李瀛绘 · 公有领域</figcaption>

@@ -81,17 +81,6 @@ a{text-underline-offset:.2em}
 .stop-picker b{display:block;margin:.25rem 0;font-size:.84rem}
 .stop-picker small{display:block;font:600 .72rem var(--cn);color:inherit}
 
-.build-section{padding:8rem 6vw;background:linear-gradient(115deg,#eee5d1,#ddd1b5)}
-.section-intro.light{padding:0 0 3.5rem;color:var(--ink)}
-.section-intro.light>p{color:var(--body)}
-.tech-grid{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid #9e8967}
-.tech-grid article{min-height:310px;padding:2rem 1.4rem;border-right:1px solid #aa9676}
-.tech-grid article:last-child{border-right:0}
-.tech-grid span{color:var(--red);font:800 .68rem var(--ui);letter-spacing:.1em}
-.tech-grid h3{margin:1.3rem 0 .8rem;font-size:1.35rem;line-height:1.3}
-.tech-grid p{color:var(--body);font-size:.92rem;line-height:1.65}
-.tech-grid code{display:block;margin-top:2rem;padding:.75rem;background:#17352f;color:#e8d8b4;font:500 .75rem/1.5 ui-monospace,SFMono-Regular,monospace}
-
 .poet-section{display:grid;grid-template-columns:minmax(300px,.72fr) 1fr;gap:clamp(3rem,8vw,9rem);align-items:center;padding:8rem 10vw;background:#17352f;color:#eee3cd}
 .poet-section figure{position:relative;margin:0;padding:1.1rem;background:#d7c6a2;box-shadow:0 24px 70px #071c1880}
 .poet-section figure::after{content:"";position:absolute;inset:1.1rem;border:1px solid #8e744a66;pointer-events:none}
@@ -141,12 +130,6 @@ button:focus-visible,a:focus-visible,.handscroll:focus-visible{outline:2px solid
   .range-row>span{display:none}
   .stop-picker{display:flex;overflow-x:auto;margin:1rem 1.4rem 0;padding-bottom:.5rem;scroll-snap-type:x mandatory}
   .stop-picker button{flex:0 0 145px;scroll-snap-align:start}
-  .build-section{padding:6rem 1.4rem}
-  .section-intro.light{padding-bottom:2.5rem}
-  .tech-grid{grid-template-columns:1fr}
-  .tech-grid article{min-height:0;padding:1.8rem 0;border-right:0;border-bottom:1px solid #aa9676}
-  .tech-grid article:last-child{border-bottom:0}
-  .tech-grid code{margin-top:1rem}
   .poet-section{grid-template-columns:1fr;padding:5rem 1.4rem;gap:2.5rem}
   .poet-section figure{max-width:420px}
   .poet-copy h2{font-size:4rem}

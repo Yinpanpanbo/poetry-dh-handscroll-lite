@@ -29,6 +29,10 @@ User review found the technical section culturally abrupt and rejected the final
 
 The former method/deployment credits were replaced by four genuine reading routes: the primary poem on Wikisource, Wang Wei's biography and poems at Poetry Foundation, the open Chinese Text Project record, and the Wikimedia Commons portrait record. English and Chinese pages carry equivalent content. The local Pages workflow now includes the portrait asset.
 
+## 2026-07-14 — Remove the visible technology chapter
+
+The four-card front-end chapter was removed from both public pages after user review. Technology remains fully available in the repository source and presentation-support document, but it is no longer presented as cultural content to visitors. Navigation now follows Handscroll → Wang Wei → Further Reading. This lighter public version is prepared for a separate public GitHub repository so group members can inspect and reuse the code directly.
+
 ## 2026-07-13 — Project reset and design decision
 
 ### Objective

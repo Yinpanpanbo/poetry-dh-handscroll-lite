@@ -13,7 +13,7 @@
   <a class="skip-link" href="#scroll">Skip to the handscroll</a>
   <header class="site-header">
     <a class="brand" href="#top"><span aria-hidden="true">山</span><b>POETRY AS PASSAGE</b></a>
-    <nav aria-label="Main navigation"><a href="#scroll">Handscroll</a><a href="#build">How it works</a><a href="#credits">Credits</a><a href="zh.html" lang="zh-CN">中文版</a></nav>
+    <nav aria-label="Main navigation"><a href="#scroll">Handscroll</a><a href="#poet">Wang Wei</a><a href="#credits">Read more</a><a href="zh.html" lang="zh-CN">中文版</a></nav>
     <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
   </header>
 
@@ -65,20 +65,7 @@
       </div>
     </section>
 
-    <section class="build-section" id="build" aria-labelledby="build-title">
-      <header class="section-intro light">
-        <div><p class="eyebrow">A SMALL, EXPLAINABLE STACK</p><h2 id="build-title">Four front-end ideas<br>build the page.</h2></div>
-        <p>The project deliberately avoids frameworks. Each visible effect can be explained from a short piece of HTML, CSS or JavaScript.</p>
-      </header>
-      <div class="tech-grid">
-        <article><span>01 · HTML</span><h3>Structure the meaning</h3><p>Semantic sections, articles, language attributes and accessible buttons keep poem, translation and controls distinct.</p><code>&lt;article class="scene"&gt;</code></article>
-        <article><span>02 · CSS</span><h3>Compose the handscroll</h3><p>Grid builds the museum frame; Flexbox lays six scenes in one horizontal sequence; media queries reshape it on mobile.</p><code>display: flex;</code></article>
-        <article><span>03 · MOTION</span><h3>Animate one state</h3><p>A class change opens the scroll. CSS controls the clip-path transition, so motion remains purposeful and easy to explain.</p><code>.hero.opened { … }</code></article>
-        <article><span>04 · JAVASCRIPT</span><h3>Synchronise the view</h3><p>One current-stop value updates position, note, range and active button. No framework or chart library is required.</p><code>scrollTo({ left })</code></article>
-      </div>
-    </section>
-
-    <section class="poet-section" aria-labelledby="poet-title">
+    <section class="poet-section" id="poet" aria-labelledby="poet-title">
       <figure>
         <img src="assets/handscroll/wang-wei-portrait.jpg" alt="A later portrait of the Tang poet Wang Wei, painted by Li Ying in the Qing dynasty">
         <figcaption>Wang Wei · later portrait by Li Ying, Qing dynasty · Public domain</figcaption>
