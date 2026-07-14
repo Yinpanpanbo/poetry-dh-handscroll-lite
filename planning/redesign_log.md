@@ -23,6 +23,12 @@ Group review found the complete exhibition too long to explain in a course prese
 - Chrome DevTools Protocol simulation: six scenes and six buttons; hero state opens; stop 06 selects “Remain” and reports `06 / 06`; Boundary updates the note; range input moves the handscroll; English and Chinese load one shared script; document overflow is 0.
 - Updated screenshot-led product and presentation documents now follow the shorter page architecture.
 
+## 2026-07-14 — Poet context and useful reading links
+
+User review found the technical section culturally abrupt and rejected the final project-description block as inappropriate public-facing content. A new portrait-led Wang Wei section now follows the technical cards, connecting his roles as poet, painter, musician and statesman to the poem's movement from natural detail to human presence. The image is Li Ying's later Qing-dynasty portrait (public domain); the page explicitly states that it is not a Tang-life likeness.
+
+The former method/deployment credits were replaced by four genuine reading routes: the primary poem on Wikisource, Wang Wei's biography and poems at Poetry Foundation, the open Chinese Text Project record, and the Wikimedia Commons portrait record. English and Chinese pages carry equivalent content. The local Pages workflow now includes the portrait asset.
+
 ## 2026-07-13 — Project reset and design decision
 
 ### Objective
